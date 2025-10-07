@@ -9,7 +9,7 @@ describe("The home page", () => {
   //   cy.get("footer");
   // });
   it("should contains Archetype in the footer", () => {
-    cy.get("footer").contains("Archetype");
+    cy.get("footer").contains("Labs");
   });
   it("should have un link to albertobasalo.dev and other navigation links", () => {
     cy.get("[href='https://albertobasalo.dev']");

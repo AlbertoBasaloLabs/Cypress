@@ -6,9 +6,9 @@ describe("The home page", () => {
     cy.visit("http://localhost:4200/");
     cy.get("footer");
   });
-  it("should contains Archetype in the footer", () => {
+  it("should contains Labs in the footer", () => {
     cy.visit("http://localhost:4200/");
-    cy.get("footer").contains("Archetype");
+    cy.get("footer").contains("Labs");
   });
   it("should have un link to albertobasalo.dev", () => {
     cy.visit("http://localhost:4200/");

@@ -5,9 +5,9 @@ Repository: [Laboratories / Cypress](https://github.com/AlbertoBasaloLabs/Cypres
 
 ## Subject Under Test:
 
-- Frontend Web application [angular spa / v20](https://github.com/AIDDbot/ArchetypeAngularSPA)
+- Frontend Web application [angular spa / v20](https://github.com/AlbertoBasaloLabs/Angular)
 
-- API Rest Server: [Express API ](https://github.com/AIDDbot/ArchetypeExpressAPI)
+- API Rest Server: [Express API ]()
   
 ---
 - **Author**: [Alberto Basalo](https://albertobasalo.dev)

@@ -61,13 +61,15 @@ cy.get('title'); // existencia implícita
 
 ## Concreción práctica
 
-### 0. Inicio
+### 0. Inicio (demo)
 
+- lanzar el SUT [AI code Academy / archetype angular spa](https://github.com/AIDDbot/ArchetypeAngularSPA)
 - `cypress open` para abrir el Test Runner.
 - Escoger e2e y chrome.
 - Crear una prueba de ejemplo.
 - Ejecutarla y ver el resultado.
 - Explorar la interfaz y las herramientas de depuración.
+- Explorar la estructura de carpeta `cypress`.
 
 ### 1. Home page
 

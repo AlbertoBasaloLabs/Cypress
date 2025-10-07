@@ -16,7 +16,7 @@ describe("The application navigation links", () => {
   });
   it("should have a link to the repository page", () => {
     //cy.log("3 - Inside an it");
-    cy.get("a[href='https://github.com/AIcodeAcademy/ArchetypeAngularSPA']");
+    cy.get("a[href='https://github.com/AlbertoBasaloLabs/Angular']");
   });
   it("should have a header link with 'register' text", () => {
     //cy.log("x - Inside another  it");
