@@ -1,0 +1,25 @@
+[
+  {
+    "id": "166.2",
+    "initial_cash": 10000,
+    "name": "Test Portfolio",
+    "cash": 8171.488,
+    "assets": [
+      {
+        "asset_type": "stock",
+        "symbol": "AAPL",
+        "units": 2,
+        "average_price": 718,
+        "lastUpdated": "2025-06-12T08:26:48.483Z"
+      },
+      {
+        "asset_type": "crypto",
+        "symbol": "BTC",
+        "units": 0.1,
+        "average_price": 3925.12,
+        "lastUpdated": "2025-06-12T08:26:55.480Z"
+      }
+    ],
+    "lastUpdated": "2025-06-12T08:26:55.480Z"
+  }
+]
