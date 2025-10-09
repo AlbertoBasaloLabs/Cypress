@@ -1,4 +1,4 @@
-# 12 Buenas prácticas con Cypress
+# 2 Buenas prácticas con Cypress
 
 ## Conexión
 
