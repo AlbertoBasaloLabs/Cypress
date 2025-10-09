@@ -1,6 +1,6 @@
 describe("El laboratorio de Angular", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:4200/");
+    cy.visit("/");
   });
   // it("should be visitable", () => {
   //   cy.get("body");
@@ -18,6 +18,13 @@ describe("El laboratorio de Angular", () => {
     cy.get("[href='https://albertobasalo.dev']");
   });
   it("Tiene una sección de navegación con enlaces internos", () => {
+    // One shot query
+    cy.get("nav a");
+    // versus step by step
     cy.get("nav").find("a");
+    // versus alias and log
+    cy.get("nav").as("navigation");
+    cy.log("found nav");
+    cy.get("@navigation").find("a");
   });
 });

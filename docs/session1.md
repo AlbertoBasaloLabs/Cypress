@@ -96,7 +96,7 @@ Escribe un conjunto de pruebas end-to-end (E2E) utilizando Cypress para verifica
 - Utiliza la estructura describe e it de Cypress para organizar las pruebas.
 - Ejecuta las pruebas en un entorno donde la aplicación esté corriendo en localhost:4200.
 - Asegúrate de que las pruebas sean independientes y reutilicen la visita a la página cuando sea necesario.
-- Corrige cualquier error tipográfico o lógico en las descripciones (por ejemplo, "should contains" debería ser "should contain", y "un link" debería ser "a link").
+
 
 ## Conclusión
 
