@@ -111,4 +111,4 @@ Organizar y depurar pruebas.
 
 ### ¿Qué sigue?
 
-Trabajo con servidores, APIs y datos.
+Interactuar con formularios y gestionar datos en Cypress.
