@@ -27,6 +27,7 @@ describe("The register form", () => {
       cy.get("[type='password']").last().type("1234z");
       cy.get("form").find("fieldset").find("input").last().check();
       cy.get("form > button").first().should("be.enabled");
+      cy.get("section#errors").should("not.exist");
     });
   });
   context("when the user fills the form incorrectly", () => {
@@ -41,7 +42,7 @@ describe("The register form", () => {
     it("should mark the email as invalid if it is not an email", () => {
       cy.get("[type='email']").type("peter");
       cy.get("[type='email']:invalid").should("exist");
-      cy.get("section").contains("email");
+      cy.get("section#errors").contains("email");
     });
   });
   context("when the user resets the form", () => {
