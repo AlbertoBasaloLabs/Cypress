@@ -1,6 +1,10 @@
 {
-    "workbench.colorCustomizations": {
-    "statusBar.background": "#00AA00",
+  "material-icon-theme.files.associations": {
+    "*.po.ts": "html",
+     "*.command.ts": "console",
+  },  
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#00FFAA",
     "statusBar.foreground": "#000000"
   }
 }

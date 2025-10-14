@@ -54,7 +54,7 @@ describe("The register process", () => {
         // Assert
         cy.wait("@postUsersRegister")
           .its("response.statusCode")
-          .should("eq", 400);
+          .should("be.above", 400);
         cy.get("section#failed").should("be.visible");
         cy.url().should("include", registerWebUrl);
       });

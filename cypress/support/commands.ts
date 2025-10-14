@@ -1,4 +1,7 @@
-import { createPortfolio, deleteAllPortfolios } from "./portfolios.command";
+import {
+  createPortfolio,
+  deleteAllPortfolios,
+} from "./draft/portfolios.command";
 
 declare global {
   namespace Cypress {
