@@ -31,9 +31,9 @@ Los stubs permiten simular respuestas específicas para ciertas solicitudes, mie
 
 ### Comandos reutilizables
 
-- Un poco off-topic, pero util llegados a este punto.
+- Un poco off-topic, pero util llegados a este punto...
 
-- Crear comandos personalizados en Cypress para encapsular lógica repetitiva y mejorar la legibilidad de las pruebas.
+- Es imprescindible crear comandos personalizados en Cypress para encapsular lógica repetitiva y mejorar la legibilidad de las pruebas.
 
 ## Concreción práctica
 
@@ -41,13 +41,11 @@ Los stubs permiten simular respuestas específicas para ciertas solicitudes, mie
 
 Usar fixtures para reutilizar respuestas comunes en las pruebas.
 
+Aumentar la legibilidad de Cypress con comandos reutilizables.
+
 ### El API users
 
 Aprovechar el entorno de cypress para probar también el API.
-
-### El comando Login
-
-Aumentar la legibilidad de Cypress con comandos reutilizables.
 
 ## Conclusión
 

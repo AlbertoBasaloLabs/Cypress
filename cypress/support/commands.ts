@@ -1,16 +1,10 @@
-import {
-  createPortfolio,
-  deleteAllPortfolios,
-} from "./draft/portfolios.command";
+import { login } from "./login.function";
 
 declare global {
   namespace Cypress {
     interface Chainable {
-      deleteAllPortfolios(): Chainable<void>;
-      createPortfolio(cash: number, name: string): Chainable<void>;
+      login(): Chainable<void>;
     }
   }
 }
-
-Cypress.Commands.add("deleteAllPortfolios", deleteAllPortfolios);
-Cypress.Commands.add("createPortfolio", createPortfolio);
+Cypress.Commands.add("login", login());
