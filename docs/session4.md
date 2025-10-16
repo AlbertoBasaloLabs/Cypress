@@ -24,7 +24,6 @@
 
 - Permiten interceptar y modificar las solicitudes y respuestas de red entre el front y el back.
 
-
 ### Stubs y Spies
 
 Los stubs permiten simular respuestas específicas para ciertas solicitudes, mientras que los spies permiten monitorear las solicitudes sin modificarlas.
@@ -41,12 +40,40 @@ Los stubs permiten simular respuestas específicas para ciertas solicitudes, mie
 
 Usar fixtures para reutilizar respuestas comunes en las pruebas.
 
-Aumentar la legibilidad de Cypress con comandos reutilizables.
+```ts
+cy.intercept('POST', '/api/register', { fixture: 'register-success' }).as('registerUser');
 
+cy.intercept('POST', '/api/register', { statusCode: 400 ,fixture: 'bad-request' }).as('registerUserFail');
+```
+
+Aumentar la legibilidad de Cypress con comandos reutilizables.
+```ts
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      register(name:string, email:string, password:string): Chainable<void>;
+    }
+  }
+}
+Cypress.Commands.add('register', (name, email, password) => {
+  cy.get('input[name="name"]').type(name);
+  cy.get('input[name="email"]').type(email);
+  cy.get('input[name="password"]').type(password);
+  cy.get('button[type="submit"]').click();
+});
+```
 ### El API users
 
 Aprovechar el entorno de cypress para probar también el API.
 
+```ts
+cy.request('POST', '/api/users', {
+  name: 'Test User',
+  email: 'test@example.com',
+  password: 'password123'
+}).as('newUser');
+cy.get('@newUser').its('status').should('eq', 201);
+```
 ## Conclusión
 
 ### ¿Qué hemos aprendido?
