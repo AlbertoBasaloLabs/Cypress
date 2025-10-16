@@ -74,6 +74,7 @@ cy.request('POST', '/api/users', {
 }).as('newUser');
 cy.get('@newUser').its('status').should('eq', 201);
 ```
+
 ## Conclusión
 
 ### ¿Qué hemos aprendido?
